@@ -1,0 +1,10 @@
+{
+  "name": "hls-playground",
+  "author": "Peter Lazar",
+  "scripts": {
+    "serve": "superstatic --debug"
+  },
+  "devDependencies": {
+    "superstatic": "7.1.0"
+  }
+}
