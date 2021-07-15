@@ -6,7 +6,7 @@
 * static server to serve HLS
 
 
-#### Serving HLS
+##### Serving HLS
 HLS streams can be natively played in Safari Browser
 * Run `yarn serve`
   * HLS playlists are now served: 
@@ -14,8 +14,16 @@ HLS streams can be natively played in Safari Browser
     * http://localhost:3474/media/highway-between-trees/playlist.m3u8
 
 ##### Converting mp4 to HLS
+**Horizontal videos**
+
 The script works without modification for **horizontal** videos
 * `sh create-vod-hls.sh mp4s/highway-between-trees.mp4 media/highway-between-trees`
+
+**Vertical videos**
+
+* Comment out lines 11:19 in [`create-vod-hls`](./create-vod-hls.sh)
+* Uncomment lines 21:30
+* `sh create-vod-hls.sh mp4s/skatepark.mp4 media/skatepark`
 
 ##### Requirements
 * `ffmpeg` installed and available in `PATH`

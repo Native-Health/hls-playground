@@ -6,6 +6,8 @@ set -e
 [[ ! "${1}" ]] && echo "Usage: create-vod-hls.sh SOURCE_FILE [OUTPUT_NAME]" && exit 1
 
 # comment/add lines here to control which renditions would be created
+
+# Renditions for Horizontal videos
 renditions=(
 # resolution  bitrate  audio-rate
 #  "426x240    400k    64k"
@@ -15,6 +17,17 @@ renditions=(
   # Disabled to keep playground size small
   # "1920x1080  5000k    192k"
 )
+
+# Renditions for Portrait videos
+# renditions=(
+# # resolution  bitrate  audio-rate
+# #  "240x426    400k    64k"
+#   "360x640    800k     96k"
+#   "480x842    1400k    128k"
+#   "720x1280   2800k    128k"
+#   # Disabled to keep playground size small
+#   # "1080x1920  5000k    192k"
+# )
 
 segment_target_duration=4       # try to create a new segment every X seconds
 max_bitrate_ratio=1.07          # maximum accepted bitrate fluctuations
