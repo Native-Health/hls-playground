@@ -12,6 +12,7 @@ HLS streams can be natively played in Safari Browser
   * HLS playlists are now served: 
   * Currently serving
     * http://localhost:3474/media/highway-between-trees/playlist.m3u8
+    * http://localhost:3474/media/skatepark/playlist.m3u8
 
 ##### Converting mp4 to HLS
 **Horizontal videos**
