@@ -52,6 +52,7 @@ key_frames_interval=${key_frames_interval%.*} # truncate to integer
 # static parameters that are similar for all renditions
 static_params="-c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0"
 static_params+=" -g ${key_frames_interval} -keyint_min ${key_frames_interval} -hls_time ${segment_target_duration}"
+static_params+=" -hls_key_info_file enc.keyinfo"
 static_params+=" -hls_playlist_type vod"
 
 # misc params

@@ -7,12 +7,12 @@
 
 
 ### Serving HLS
-
 HLS streams can be natively played in Safari Browser
 * Run `yarn serve`
   
   Currently serving
   * Horizontal
+    * **Encrypted** http://localhost:3474/media/summit/playlist.m3u8
     * http://localhost:3474/media/highway-between-trees/playlist.m3u8
     * http://localhost:3474/media/seashore/playlist.m3u8
   * Vertical
@@ -33,6 +33,9 @@ The script works without modification for **horizontal** videos
 ### Requirements
 * `ffmpeg` installed and available on `PATH`
 
+
+### Encrypting HLS
+* https://hlsbook.net/how-to-encrypt-hls-video-with-ffmpeg/
 
 ### Useful commands
 
@@ -64,6 +67,7 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'mp4s/highway-between-trees.mp4':
 * Horizontal videos
   * [highway-between-trees.mp4](https://mixkit.co/free-stock-video/highway-between-trees-506/)
   * [seashore.mp4](https://mixkit.co/free-stock-video/top-aerial-shot-of-seashore-with-rocks-1090/)
+  * [summit.mp4](https://mixkit.co/free-stock-video/people-walking-on-the-snowy-summit-3335/)
 
 * Portrait videos
   * [skatepark.mp4](https://mixkit.co/free-stock-video/top-aerial-shot-of-a-skater-skating-on-a-half-1364/)
